@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections; // NECESARIO para usar IEnumerator
 
 public class SkeletonPatrol : MonoBehaviour
 {
@@ -122,38 +121,6 @@ public class SkeletonPatrol : MonoBehaviour
             {
                 player.Unfreeze();
             }
-        }
-    }
-
-    public void Disappear()
-    {
-        // Activar la animación de "dead"
-        animator.SetTrigger("Dead");
-
-        // Desactivar el objeto después de un pequeño retraso (opcional)
-        StartCoroutine(DisappearAfterAnimation());
-    }
-
-
-    private IEnumerator DisappearAfterAnimation()
-    {
-        // Esperar un momento para que la animación de "dead" se reproduzca
-        yield return new WaitForSeconds(1.0f); // Ajusta el tiempo según la duración de la animación
-
-        // Desactivar el esqueleto
-        gameObject.SetActive(false);
-
-        // Desactivar el panel de interacción (si está activo)
-        if (interactionPanel != null)
-        {
-            interactionPanel.SetActive(false);
-        }
-
-        // Descongelar al caballero (si está congelado)
-        PlayerMovement player = FindFirstObjectByType<PlayerMovement>(); // MÉTODO ACTUALIZADO
-        if (player != null)
-        {
-            player.Unfreeze();
         }
     }
 }
