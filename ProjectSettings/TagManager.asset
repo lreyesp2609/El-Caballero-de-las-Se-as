@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Knight
+  - Skeleton
   layers:
   - Default
   - TransparentFX

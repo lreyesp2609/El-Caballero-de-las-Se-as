@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections; // NECESARIO para usar IEnumerator
 
 public class SkeletonPatrol : MonoBehaviour
 {
@@ -6,6 +7,7 @@ public class SkeletonPatrol : MonoBehaviour
     public Transform pointB;
     public float moveSpeed = 2f;
     public float stoppingDistance = 0.1f;
+    public GameObject interactionPanel; // Referencia al Panel de interacción
 
     private Transform currentTarget;
     private Animator animator;
@@ -22,6 +24,12 @@ public class SkeletonPatrol : MonoBehaviour
         // Asegurar que la dirección inicial sea la correcta
         facingRight = !spriteRenderer.flipX;
         animator.SetBool("FacingRight", facingRight);
+
+        // Desactivar el panel al inicio
+        if (interactionPanel != null)
+        {
+            interactionPanel.SetActive(false);
+        }
     }
 
     void Update()
@@ -80,15 +88,72 @@ public class SkeletonPatrol : MonoBehaviour
         {
             isInCombat = true;
             animator.SetFloat("Speed", 0); // Animación de Idle
+
+            // Activar el panel de interacción
+            if (interactionPanel != null)
+            {
+                interactionPanel.SetActive(true);
+            }
+
+            // Congelar al caballero
+            PlayerMovement player = other.GetComponent<PlayerMovement>();
+            if (player != null)
+            {
+                player.Freeze();
+            }
         }
     }
 
-    // Cuando el Knight se va, el Skeleton sigue patrullando
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Knight"))
         {
             isInCombat = false;
+
+            // Desactivar el panel de interacción
+            if (interactionPanel != null)
+            {
+                interactionPanel.SetActive(false);
+            }
+
+            // Descongelar al caballero
+            PlayerMovement player = other.GetComponent<PlayerMovement>();
+            if (player != null)
+            {
+                player.Unfreeze();
+            }
+        }
+    }
+
+    public void Disappear()
+    {
+        // Activar la animación de "dead"
+        animator.SetTrigger("Dead");
+
+        // Desactivar el objeto después de un pequeño retraso (opcional)
+        StartCoroutine(DisappearAfterAnimation());
+    }
+
+
+    private IEnumerator DisappearAfterAnimation()
+    {
+        // Esperar un momento para que la animación de "dead" se reproduzca
+        yield return new WaitForSeconds(1.0f); // Ajusta el tiempo según la duración de la animación
+
+        // Desactivar el esqueleto
+        gameObject.SetActive(false);
+
+        // Desactivar el panel de interacción (si está activo)
+        if (interactionPanel != null)
+        {
+            interactionPanel.SetActive(false);
+        }
+
+        // Descongelar al caballero (si está congelado)
+        PlayerMovement player = FindFirstObjectByType<PlayerMovement>(); // MÉTODO ACTUALIZADO
+        if (player != null)
+        {
+            player.Unfreeze();
         }
     }
 }

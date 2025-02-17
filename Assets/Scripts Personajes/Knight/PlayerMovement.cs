@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     private bool facingRight = true;
     private bool isGrounded;
+    private bool isFrozen = false; // Nuevo: Indica si el jugador está congelado
 
     void Start()
     {
@@ -20,6 +21,14 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        // Si el jugador está congelado, no hacer nada
+        if (isFrozen)
+        {
+            rb.linearVelocity = Vector2.zero; // Congelar el movimiento
+            animator.SetFloat("Speed", 0); // Congelar la animación
+            return;
+        }
+
         // Detección del suelo
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.5f, groundLayer);
         animator.SetBool("IsGrounded", isGrounded);
@@ -51,6 +60,18 @@ public class PlayerMovement : MonoBehaviour
         Vector3 scale = transform.localScale;
         scale.x *= -1;
         transform.localScale = scale;
+    }
+
+    // Método para congelar al jugador
+    public void Freeze()
+    {
+        isFrozen = true;
+    }
+
+    // Método para descongelar al jugador
+    public void Unfreeze()
+    {
+        isFrozen = false;
     }
 
     private void OnDrawGizmos()
