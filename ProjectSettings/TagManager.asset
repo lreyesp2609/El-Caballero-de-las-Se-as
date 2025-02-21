@@ -13,7 +13,7 @@ TagManager:
   - Ground
   - Water
   - UI
-  - Fondo
+  - Patrulla
   - 
   - 
   - 
@@ -42,6 +42,12 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Fondos
+    uniqueID: 642836437
+    locked: 0
+  - name: Personajes
+    uniqueID: 3390152389
     locked: 0
   m_RenderingLayers:
   - Default
