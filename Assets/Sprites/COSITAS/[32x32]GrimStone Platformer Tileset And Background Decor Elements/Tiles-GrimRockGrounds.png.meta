@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Tiles-GrimRockGrounds_0: 407934989584982875
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

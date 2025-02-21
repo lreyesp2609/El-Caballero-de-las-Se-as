@@ -372,7 +372,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Tiles-GrimRock-Decor-part1_0: -7800121081017680812
+      Tiles-GrimRock-Decor-part1_1: 8197344687073470053
+      Tiles-GrimRock-Decor-part1_2: -7856870632572432184
+      Tiles-GrimRock-Decor-part1_3: 5459327836876398673
+      Tiles-GrimRock-Decor-part1_4: -1945786853964701182
+      Tiles-GrimRock-Decor-part1_5: 8433571855425033948
+      Tiles-GrimRock-Decor-part1_6: -834844014590333636
+      Tiles-GrimRock-Decor-part1_7: 4007575929177047646
+      Tiles-GrimRock-Decor-part1_8: -2955959107725434021
+      Tiles-GrimRock-Decor-part1_9: 7227342494106932438
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
