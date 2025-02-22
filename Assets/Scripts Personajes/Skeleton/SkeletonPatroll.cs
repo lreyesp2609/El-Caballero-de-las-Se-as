@@ -7,6 +7,7 @@ public class SkeletonPatrol : MonoBehaviour
     public float moveSpeed = 2f;
     public float stoppingDistance = 0.1f;
     public GameObject interactionPanel; // Referencia al Panel de interacción
+    public PlayerMovement player;
 
     private Transform currentTarget;
     private Animator animator;
@@ -30,9 +31,19 @@ public class SkeletonPatrol : MonoBehaviour
             interactionPanel.SetActive(false);
         }
     }
-
+    // En SkeletonPatrol.cs
+    public void TriggerDamageEvent()
+    {
+        // Forzar sincronización con el daño del jugador
+        player.PlayHurtAnimation();
+    }
     void Update()
     {
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Skeleton_Attack") ||
+                animator.GetCurrentAnimatorStateInfo(0).IsName("Skeleton_Hit")) return;
+
+        if (animator.GetBool("IsAttacking")) return;
+
         // Si está en combate, no se mueve y entra en Idle
         if (isInCombat)
         {

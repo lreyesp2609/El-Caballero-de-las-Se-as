@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections; // Necesario para IEnumerator
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -6,26 +7,72 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpForce = 10f;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private float attackAnimationDuration = 0.5f; // Duración de la animación de ataque
+    [SerializeField] private float hurtAnimationDuration = 0.5f;
+    [SerializeField] private float hurtDelay = 0.2f; // Tiempo de espera antes de la animación
 
+    private bool isHurt = false;
     private Rigidbody2D rb;
     private Animator animator;
     private bool facingRight = true;
     private bool isGrounded;
     private bool isFrozen = false; // Nuevo: Indica si el jugador está congelado
 
+    public void PlayHurtAnimation()
+    {
+        if (!isHurt) StartCoroutine(HurtRoutine());
+    }
+
+    private IEnumerator HurtRoutine()
+    {
+        isHurt = true;
+
+        // Esperar el delay antes de la animación
+        yield return new WaitForSeconds(hurtDelay);
+
+        animator.SetTrigger("Hurt");
+
+        // Esperar duración de la animación
+        yield return new WaitForSeconds(hurtAnimationDuration);
+
+        isHurt = false;
+    }
+
+    public float GetHurtDuration()
+    {
+        return hurtDelay + hurtAnimationDuration;
+    }
+
+
+
+
+    public void PlayAttackAnimation()
+    {
+        animator.SetTrigger("Attack");
+    }
+
+    // Método para obtener la duración del ataque
+    public float GetAttackDuration()
+    {
+        return attackAnimationDuration;
+    }
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+
+        // Detectar dirección inicial basada en la escala
+        facingRight = transform.localScale.x > 0;
     }
 
     void Update()
     {
         // Si el jugador está congelado, no hacer nada
-        if (isFrozen)
+        if (isFrozen || isHurt)
         {
-            rb.linearVelocity = Vector2.zero; // Congelar el movimiento
-            animator.SetFloat("Speed", 0); // Congelar la animación
+            rb.linearVelocity = Vector2.zero;
+            animator.SetFloat("Speed", 0);
             return;
         }
 
@@ -57,9 +104,9 @@ public class PlayerMovement : MonoBehaviour
     void Flip()
     {
         facingRight = !facingRight;
-        Vector3 scale = transform.localScale;
-        scale.x *= -1;
-        transform.localScale = scale;
+        Vector3 newScale = transform.localScale;
+        newScale.x *= -1;
+        transform.localScale = newScale;
     }
 
     // Método para congelar al jugador

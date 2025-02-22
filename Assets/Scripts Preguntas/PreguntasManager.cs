@@ -12,6 +12,8 @@ public class PreguntasManager : MonoBehaviour
     public GameObject interactionPanel; // Panel de interacción
     public Animator skeletonAnimator; // Animador del esqueleto
     public GameObject skeletonObject; // Objeto del esqueleto
+    public PlayerMovement player;
+    public float skeletonAttackDuration = 1f;
 
     public Sprite[] abecedarioSprites; // Sprite con las imágenes del abecedario
     public string[] abecedarioLetras; // Letras del abecedario (A, B, C, ...)
@@ -81,32 +83,52 @@ public class PreguntasManager : MonoBehaviour
         if (respuestaSeleccionada == letraCorrecta)
         {
             Debug.Log("¡Respuesta correcta!");
-            StartCoroutine(DisappearAfterAnimation()); // Desaparece el panel y el esqueleto
+            StartCoroutine(DisappearAfterAnimation());
         }
         else
         {
             Debug.Log("Respuesta incorrecta.");
-            GenerarPregunta(); // Solo genera nueva pregunta si la respuesta es incorrecta
+            StartCoroutine(HurtAndNewQuestion());
         }
     }
 
-    // Corrutina para desaparecer al esqueleto después de la animación
+    private IEnumerator HurtAndNewQuestion()
+    {
+        skeletonAnimator.SetTrigger("Attack");
+
+        // Delay manual basado en tu animación específica
+        float hitFrameDelay = 0.1f; // Ej: golpe a los 0.4 segundos
+        yield return new WaitForSeconds(hitFrameDelay);
+
+        player.PlayHurtAnimation();
+
+        // Esperar hasta que ambas animaciones terminen
+        yield return new WaitForSeconds(
+            Mathf.Max(
+                skeletonAttackDuration - hitFrameDelay,
+                player.GetHurtDuration()
+            )
+        );
+
+        GenerarPregunta();
+    }
+
     private IEnumerator DisappearAfterAnimation()
     {
-        skeletonAnimator.SetTrigger("Dead");
+        SkeletonHealth skeletonHealth = skeletonObject.GetComponent<SkeletonHealth>();
+    
+        // Aplicar daño
+        skeletonHealth.TakeDamage(skeletonHealth.maxHealth / 4);
 
-        // Desactivar el panel al instante
-        interactionPanel.SetActive(false);
+        // Esperar antes de atacar
+        yield return new WaitForSeconds(0.2f); // Pequeño delay para sincronización
+    
+        player.PlayAttackAnimation();
+        yield return new WaitForSeconds(player.GetAttackDuration());
 
-        // Esperar para la animación de muerte
-        yield return new WaitForSeconds(1.0f);
-
-        skeletonObject.SetActive(false);
-
-        PlayerMovement player = FindFirstObjectByType<PlayerMovement>();
-        if (player != null)
+        if(skeletonHealth.currentHealth > 0)
         {
-            player.Unfreeze();
+            GenerarPregunta();
         }
     }
 
