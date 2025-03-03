@@ -116,17 +116,17 @@ public class PreguntasManager : MonoBehaviour
     private IEnumerator DisappearAfterAnimation()
     {
         SkeletonHealth skeletonHealth = skeletonObject.GetComponent<SkeletonHealth>();
-    
+
         // Aplicar daño
         skeletonHealth.TakeDamage(skeletonHealth.maxHealth / 4);
 
         // Esperar antes de atacar
         yield return new WaitForSeconds(0.2f); // Pequeño delay para sincronización
-    
+
         player.PlayAttackAnimation();
         yield return new WaitForSeconds(player.GetAttackDuration());
 
-        if(skeletonHealth.currentHealth > 0)
+        if (skeletonHealth.currentHealth > 0)
         {
             GenerarPregunta();
         }

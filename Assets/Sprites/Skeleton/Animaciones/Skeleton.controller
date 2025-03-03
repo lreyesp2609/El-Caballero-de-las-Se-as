@@ -57,7 +57,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Skeleton_Walk
+  m_Name: Walk
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -84,7 +84,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Skeleton_Idle
+  m_Name: Idle
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -114,7 +114,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Skeleton_Dead
+  m_Name: Dead
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -286,7 +286,7 @@ AnimatorStateMachine:
     m_Position: {x: 60, y: 220, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -5977381789739953285}
-    m_Position: {x: 460, y: 90, z: 0}
+    m_Position: {x: 490, y: 100, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -4233029221047541083}
     m_Position: {x: 200, y: 360, z: 0}
@@ -364,7 +364,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Skeleton_Hit
+  m_Name: Hit
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -392,7 +392,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Skeleton_Attack
+  m_Name: Attack
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:

@@ -39,8 +39,8 @@ public class SkeletonPatrol : MonoBehaviour
     }
     void Update()
     {
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Skeleton_Attack") ||
-                animator.GetCurrentAnimatorStateInfo(0).IsName("Skeleton_Hit")) return;
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Attack") ||
+                animator.GetCurrentAnimatorStateInfo(0).IsName("Hit")) return;
 
         if (animator.GetBool("IsAttacking")) return;
 
@@ -134,4 +134,10 @@ public class SkeletonPatrol : MonoBehaviour
             }
         }
     }
+
+    public void ResetAttack()
+    {
+        animator.SetBool("IsAttacking", false);
+    }
+
 }
