@@ -126,4 +126,37 @@ public class PlayerMovement : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(groundCheck.position, 0.2f);
     }
+
+    public void PlayDeathAnimation()
+    {
+        animator.SetTrigger("Death");
+        animator.ResetTrigger("Hurt");
+        animator.ResetTrigger("Attack");
+        animator.ResetTrigger("Jump");
+    }
+
+    public void ResetAllTriggers()
+    {
+        foreach (var param in animator.parameters)
+        {
+            if (param.type == AnimatorControllerParameterType.Trigger)
+            {
+                animator.ResetTrigger(param.name);
+            }
+        }
+    }
+
+    public float GetDeathAnimationLength()
+{
+    // Asegúrate de que el nombre coincida con tu animación
+    RuntimeAnimatorController ac = animator.runtimeAnimatorController;
+    foreach(AnimationClip clip in ac.animationClips)
+    {
+        if(clip.name == "Knight_Death") // Nombre exacto de tu animación
+        {
+            return clip.length;
+        }
+    }
+    return 1f; // Valor por defecto si no se encuentra
+}
 }

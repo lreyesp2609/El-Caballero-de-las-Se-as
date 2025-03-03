@@ -92,17 +92,21 @@ public class PreguntasManager : MonoBehaviour
         }
     }
 
+    // Agrega esta variable al inicio del script
+    public PlayerHealth playerHealth;
+
+    // Modifica la corrutina HurtAndNewQuestion
     private IEnumerator HurtAndNewQuestion()
     {
         skeletonAnimator.SetTrigger("Attack");
-
-        // Delay manual basado en tu animación específica
-        float hitFrameDelay = 0.1f; // Ej: golpe a los 0.4 segundos
+        float hitFrameDelay = 0.1f;
         yield return new WaitForSeconds(hitFrameDelay);
+
+        // Reducir vida aquí
+        playerHealth.LoseLife();
 
         player.PlayHurtAnimation();
 
-        // Esperar hasta que ambas animaciones terminen
         yield return new WaitForSeconds(
             Mathf.Max(
                 skeletonAttackDuration - hitFrameDelay,
@@ -110,7 +114,11 @@ public class PreguntasManager : MonoBehaviour
             )
         );
 
-        GenerarPregunta();
+        // Solo generar nueva pregunta si sigue con vida
+        if (playerHealth.currentHealth > 0)
+        {
+            GenerarPregunta();
+        }
     }
 
     private IEnumerator DisappearAfterAnimation()
