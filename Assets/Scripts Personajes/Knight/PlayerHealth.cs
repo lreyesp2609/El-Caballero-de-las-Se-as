@@ -9,8 +9,11 @@ public class PlayerHealth : MonoBehaviour
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
+
     public PlayerMovement playerMovement;
-    public GameObject interactionPanel; // Arrastra el panel de preguntas en el inspector
+
+    [Header("Paneles de Interacción")]
+    public GameObject[] interactionPanels;
 
     [SerializeField] private float deathAnimationDuration = 1f;
 
@@ -85,9 +88,14 @@ public class PlayerHealth : MonoBehaviour
             StartCoroutine(FadeInBlackScreen());
         }
 
-        // Ocultar UI de corazones y panel de preguntas
-        if (interactionPanel != null) interactionPanel.SetActive(false);
-        foreach (Image heart in hearts) heart.gameObject.SetActive(false);
+        // Ocultar TODOS los paneles de interacción
+        if (interactionPanels != null && interactionPanels.Length > 0)
+        {
+            foreach (GameObject panel in interactionPanels)
+            {
+                if (panel != null) panel.SetActive(false);
+            }
+        }
 
         // Calcular qué dura más: la animación o el sonido
         float deathAnimationLength = playerMovement.GetDeathAnimationLength();
