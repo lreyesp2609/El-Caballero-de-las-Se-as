@@ -321,7 +321,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ceeb95b44e223454696b9cf6488d3fc8, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 01fb093f9521b2044afb86376d12247b, type: 2}
@@ -348,7 +348,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -640,22 +640,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 391328190}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a3c2a882d4448b4ab319ca5e5b353b6, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f0cdae1ed8b81a4e9284d124fd1ee64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  storyText: {fileID: 309831635}
+  creditText: {fileID: 309831635}
   letterDelay: 0.05
-  nextSceneName: Nivel 1 - Pueblo
+  nextSceneName: MenuPrincipal
   continuePrompt: {fileID: 351224641}
   audioClips:
-  - {fileID: 8300000, guid: cb1d01c4fe39de04fb916eb1949dfc15, type: 3}
-  - {fileID: 8300000, guid: 95556e0fae2f7d1408576da9f1a02895, type: 3}
-  - {fileID: 8300000, guid: c1b222b9ce08ce04fa198de0556b6d3f, type: 3}
-  - {fileID: 8300000, guid: e07c5f96027a9884fa92c0fde8ac621e, type: 3}
-  - {fileID: 8300000, guid: 5796b8606c023cf41a3d8d5d5476b7ee, type: 3}
-  - {fileID: 8300000, guid: 2a5c52e8ac058804396a3b4828f14f4c, type: 3}
-  - {fileID: 8300000, guid: 4dacaec6b00165342918d450b8509f67, type: 3}
-  - {fileID: 8300000, guid: 6f72b9ec8c41d304ba5204755c76b163, type: 3}
+  - {fileID: 8300000, guid: 63ec903427ceb5a4e897c8aa37c2823d, type: 3}
+  - {fileID: 8300000, guid: 0a64dce96aa032f4896c0f3d149b214a, type: 3}
+  - {fileID: 8300000, guid: 301eb2851a07e1149b28bc08492b5ab1, type: 3}
+  - {fileID: 8300000, guid: 4440ee36f95027147bb9d81dae1cce5e, type: 3}
+  - {fileID: 8300000, guid: 612fda4ddb8dc4148a409e1dfe69fdbd, type: 3}
+  - {fileID: 8300000, guid: a393775d0ee4d8c48b1e33fd30c44092, type: 3}
   audioSource: {fileID: 0}
 --- !u!1 &1009109575
 GameObject:

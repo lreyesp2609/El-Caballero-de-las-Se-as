@@ -9,4 +9,10 @@ public class MenuPrincipalManager : MonoBehaviour
     {
         SceneManager.LoadScene("MenuExplicacion");
     }
+
+    // Método público para asignar al botón
+    public void CargarCreditos()
+    {
+        SceneManager.LoadScene("CREDITOS");
+    }
 }
