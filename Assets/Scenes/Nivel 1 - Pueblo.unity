@@ -2083,7 +2083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a490085a80087cd409f5e8705eda3d33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemigo: {fileID: 576521546}
+  enemigo: {fileID: 683945774}
   canvasVictoria: {fileID: 1914491823}
   textoHistoria: {fileID: 683308354}
   promptContinuar: {fileID: 1906550999}
