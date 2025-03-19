@@ -7,23 +7,26 @@ using System.Collections;
 public class CreditosManager : MonoBehaviour
 {
     [Header("Text Configuration")]
-    public TextMeshProUGUI creditText; // Cambiado de storyText a creditText
+    public TextMeshProUGUI creditText;
     public float letterDelay = 0.05f;
     public string nextSceneName = "MenuNiveles";
     public GameObject continuePrompt;
 
-    [Header("Audio Configuration")]
-    public AudioClip[] audioClips;
-    public AudioSource audioSource;
-
     private string[] creditLines = {
-        "CRÉDITOS", // Título principal
-        "Equipo de Desarrollo:\n", // Encabezado sección
-        "Cando Moreno Robinson Rodrigo\nGamboa Macias Kevin Rolando\n", // Nombres 
+        "CRÉDITOS",
+        "Equipo de Desarrollo:\n",
+        "Cando Moreno Robinson Rodrigo\nGamboa Macias Kevin Rolando\n",
         "Asignatura: Interacción Hombre Máquina\n",
         "Docente: Ing. Erazo Moreta Orlando Ramiro\n",
         "Período Académico: 2024-2025",
-        "" // Último elemento vacío para completar los 8
+        "",
+        "https://itch.io/search?type=games&q=Medieval+Fantasy+Character+Pack",
+        "https://es.vidnoz.com/texto-a-voz.html",
+        "https://kartoy.itch.io/32x32grimstone-platformer-tileset",
+        "https://brullov.itch.io/oak-woods",
+        "https://szadiart.itch.io/pixel-platformer-castle?download",
+        "https://jesse-m.itch.io/skeleton-pack",
+        "https://sventhole.itch.io/hero-knight"
     };
 
     private bool isTyping = false;
@@ -32,12 +35,6 @@ public class CreditosManager : MonoBehaviour
     void Start()
     {
         continuePrompt.SetActive(false);
-
-        if (audioSource == null)
-        {
-            audioSource = gameObject.AddComponent<AudioSource>();
-        }
-
         StartCoroutine(ShowCredits());
     }
 
@@ -45,20 +42,17 @@ public class CreditosManager : MonoBehaviour
     {
         for (int i = 0; i < creditLines.Length; i++)
         {
-            if (!string.IsNullOrEmpty(creditLines[i])) // Saltar líneas vacías
+            if (!string.IsNullOrEmpty(creditLines[i]))
             {
-                audioSource.clip = audioClips[i];
-                audioSource.Play();
-
                 StartCoroutine(TypeText(creditLines[i]));
 
-                yield return new WaitUntil(() => !audioSource.isPlaying && !isTyping);
+                yield return new WaitUntil(() => !isTyping);
 
                 continuePrompt.SetActive(true);
                 yield return new WaitUntil(() => Input.anyKeyDown);
                 continuePrompt.SetActive(false);
 
-                creditText.text += "\n"; // Agregar salto de línea después de cada sección
+                creditText.text += "\n";
             }
             yield return new WaitForSeconds(0.1f);
         }
@@ -69,13 +63,15 @@ public class CreditosManager : MonoBehaviour
     IEnumerator TypeText(string text)
     {
         isTyping = true;
-        string currentText = creditText.text;
+        string initialText = creditText.text; // Guardamos el texto inicial
+        string currentText = initialText;
 
         foreach (char letter in text.ToCharArray())
         {
             if (skipRequested)
             {
-                creditText.text = currentText + text;
+                // Usamos initialText para evitar duplicar caracteres
+                creditText.text = initialText + text;
                 skipRequested = false;
                 break;
             }
