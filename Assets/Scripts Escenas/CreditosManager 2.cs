@@ -1,10 +1,10 @@
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class CreditosManager : MonoBehaviour
+
+public class CreditosManager2 : MonoBehaviour
 {
     [Header("Text Configuration")]
     public TextMeshProUGUI creditText;
@@ -14,11 +14,14 @@ public class CreditosManager : MonoBehaviour
 
     private string[] creditLines = {
         "CRÉDITOS",
-        "Equipo de Desarrollo:\n",
-        "Cando Moreno Robinson Rodrigo\nGamboa Macias Kevin Rolando\n",
-        "Asignatura: Interacción Hombre Máquina\n",
-        "Docente: Ing. Erazo Moreta Orlando Ramiro\n",
-        "Período Académico: 2024-2025",
+        "REFERENCIAS:\n",
+        "https://itch.io/search?type=games&q=Medieval+Fantasy+Character+Pack\n",
+        "https://es.vidnoz.com/texto-a-voz.html\n",
+        "https://kartoy.itch.io/32x32grimstone-platformer-tileset\n",
+        "https://brullov.itch.io/oak-woods\n",
+        "https://szadiart.itch.io/pixel-platformer-castle?download\n",
+        "https://jesse-m.itch.io/skeleton-pack\n",
+        "https://sventhole.itch.io/hero-knight\n",
         "",
     };
 
