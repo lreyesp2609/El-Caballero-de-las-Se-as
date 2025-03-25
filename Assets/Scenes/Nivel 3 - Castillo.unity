@@ -144,7 +144,7 @@ Transform:
   m_GameObject: {fileID: 21071478}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 178.53, y: -3.47, z: 0}
+  m_LocalPosition: {x: 178.53, y: 13.92, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -765,7 +765,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 39961565}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e7c85b203332af469cf74ac16f0fe02, type: 3}
+  m_Script: {fileID: 11500000, guid: c1bacec7b84251d4dad4e733add22e24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   preguntaText: {fileID: 1991646529}
@@ -785,67 +785,29 @@ MonoBehaviour:
   player: {fileID: 343328040}
   skeletonAttackDuration: 1
   abecedarioSprites:
-  - {fileID: 771400437, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1402766991, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 320863717, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 1932737643, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1463282453, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 1065221094, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 202370464, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1326424057, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1280691261, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1485832691, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -891163013, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1572871224, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 1515948772, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 880568267, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 18916146, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 595344857, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 707074815, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1257786875, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 914629411, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 224629491, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 192344563, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 449354367, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 1607042278, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 1293607314, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1384813296, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -645981381, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -2103462953, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 374476516, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -808401316, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 319419296, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
+  - {fileID: 5088316998373936774, guid: eaec45343c59365459455c53064a9850, type: 3}
+  - {fileID: -855298285791758126, guid: 30f500fe29ed1574a82dd8a3b643a31b, type: 3}
+  - {fileID: 6937817954938267909, guid: 87f4248586ad3734c8936f5160405a7b, type: 3}
+  - {fileID: -6470460504253458178, guid: 47d8a2936d0c43c44aaf1586ffd96d87, type: 3}
+  - {fileID: -4178046375966092550, guid: e7e8bd6477e17414bbe7ef5bbf4d412e, type: 3}
+  - {fileID: 4130640169021434097, guid: 7ebb00c0f0e6492469663a497a8f23d4, type: 3}
+  - {fileID: 3465286685962602723, guid: cb724299d4edc7641a8bcc3ec132d44f, type: 3}
+  - {fileID: 7028616704906629411, guid: b2a987d6706929b49b17dd7bd2a02685, type: 3}
+  - {fileID: 8288426215254106694, guid: f2223db021541e944a04ef872af2f6d0, type: 3}
+  - {fileID: 4113829005332862926, guid: 7a1939a7072d81d4bb6a06d97baee55d, type: 3}
+  - {fileID: -5099292496197868168, guid: 512196dd006d7bc44b1aef36d1d0085d, type: 3}
   abecedarioLetras:
-  - A
-  - B
-  - C
-  - CH
-  - D
-  - E
-  - F
-  - G
-  - H
-  - I
-  - J
-  - K
-  - L
-  - LL
-  - M
-  - N
-  - O
-  - P
-  - Q
-  - R
-  - RR
-  - S
-  - T
-  - U
-  - V
-  - W
-  - X
-  - Y
-  - Z
-  - "\xD1"
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
   playerHealth: {fileID: 343328042}
 --- !u!1 &45359233
 GameObject:
@@ -860,6 +822,7 @@ GameObject:
   - component: {fileID: 45359236}
   - component: {fileID: 45359235}
   - component: {fileID: 45359234}
+  - component: {fileID: 45359239}
   m_Layer: 5
   m_Name: Preguntas Necromancer
   m_TagString: Untagged
@@ -1041,6 +1004,59 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &45359239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45359233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1bacec7b84251d4dad4e733add22e24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  preguntaText: {fileID: 1695051388}
+  opcionesButtons:
+  - {fileID: 32737111}
+  - {fileID: 128738918}
+  - {fileID: 1074123893}
+  - {fileID: 1474002883}
+  "imagenesSe\xF1as":
+  - {fileID: 1776590013}
+  - {fileID: 1286565196}
+  - {fileID: 1883982116}
+  - {fileID: 1143532118}
+  interactionPanel: {fileID: 1156348782}
+  skeletonAnimator: {fileID: 683945775}
+  skeletonObject: {fileID: 683945774}
+  player: {fileID: 343328040}
+  skeletonAttackDuration: 1
+  abecedarioSprites:
+  - {fileID: 5088316998373936774, guid: eaec45343c59365459455c53064a9850, type: 3}
+  - {fileID: -855298285791758126, guid: 30f500fe29ed1574a82dd8a3b643a31b, type: 3}
+  - {fileID: 6937817954938267909, guid: 87f4248586ad3734c8936f5160405a7b, type: 3}
+  - {fileID: -6470460504253458178, guid: 47d8a2936d0c43c44aaf1586ffd96d87, type: 3}
+  - {fileID: -4178046375966092550, guid: e7e8bd6477e17414bbe7ef5bbf4d412e, type: 3}
+  - {fileID: 4130640169021434097, guid: 7ebb00c0f0e6492469663a497a8f23d4, type: 3}
+  - {fileID: 3465286685962602723, guid: cb724299d4edc7641a8bcc3ec132d44f, type: 3}
+  - {fileID: 7028616704906629411, guid: b2a987d6706929b49b17dd7bd2a02685, type: 3}
+  - {fileID: 8288426215254106694, guid: f2223db021541e944a04ef872af2f6d0, type: 3}
+  - {fileID: 4113829005332862926, guid: 7a1939a7072d81d4bb6a06d97baee55d, type: 3}
+  - {fileID: -5099292496197868168, guid: 512196dd006d7bc44b1aef36d1d0085d, type: 3}
+  abecedarioLetras:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  playerHealth: {fileID: 343328042}
 --- !u!1 &62188979
 GameObject:
   m_ObjectHideFlags: 0
@@ -2252,7 +2268,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &169255118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2271,16 +2287,33 @@ MonoBehaviour:
   promptContinuar: {fileID: 1906550999}
   sonidoAmbiente: {fileID: 222966786}
   velocidadLetras: 0.05
-  siguienteEscena: Nivel 2 - Bosque
+  siguienteEscena: CREDITOS 3
   clipsAudio:
-  - {fileID: 8300000, guid: ab21accedbd1d2946af6c8b501b65921, type: 3}
-  - {fileID: 8300000, guid: 410d991953a34664da3090bd977eda7b, type: 3}
-  - {fileID: 8300000, guid: f00aa76103edde24bb56d4d544adc8d2, type: 3}
+  - {fileID: 8300000, guid: a50a68311c2cbe444a3a38f799a12ab2, type: 3}
+  - {fileID: 8300000, guid: a7313323664a17c4f910bc0cf826b76b, type: 3}
+  - {fileID: 8300000, guid: 1a140c8dda52f3745872110ca4e159fe, type: 3}
+  - {fileID: 8300000, guid: 2a38b4d378b54554eafadcf05019b171, type: 3}
+  - {fileID: 8300000, guid: 2dac375710371274ca487f1cf6ee991a, type: 3}
+  - {fileID: 8300000, guid: dd80c1bed8c4bfc44bb85c7786e8937f, type: 3}
+  - {fileID: 8300000, guid: f939fd3f4447130409c8aa6a4d795502, type: 3}
   fuenteAudio: {fileID: 0}
   parrafos:
-  - "\xA1Gracias por liberarme!"
-  - "No ten\xEDa control sobre mis acciones...\nLa oscuridad me posey\xF3."
-  - "Por favor, contin\xFAa tu viaje y libera a los dem\xE1s."
+  - "El \xFAltimo guardi\xE1n de la oscuridad se alza ante ti, una figura imponente
+    cuyas manos, antes llenas de poder, ahora tiemblan bajo el peso de la maldici\xF3n."
+  - "Sus ojos, vac\xEDos y sombr\xEDos, reflejan la lucha interna de un alma atrapada.
+    Con un movimiento lento pero firme, sus manos comienzan a formar se\xF1ales,
+    un lenguaje olvidado que solo t\xFA puedes comprender."
+  - "\xABGracias...\xBB, sus manos dicen, mientras la oscuridad comienza a desvanecerse
+    de su cuerpo."
+  - "\xABLa maldici\xF3n me oblig\xF3 a ser un prisionero de mi propia mente, un
+    esclavo de la sombra que consumi\xF3 nuestro reino.\xBB"
+  - "Con un \xFAltimo gesto, sus manos se alzan en se\xF1al de paz.  \xABHas roto
+    las cadenas que me ataban. Ahora, por fin, puedo descansar.\xBB"
+  - "Antes de desvanecerse por completo, sus dedos trazan una \xFAltima frase en
+    el aire: \xABGracias... Nunca olvides lo aprendido en tu camino. El lenguaje
+    es el alma, y t\xFA eres su guardi\xE1n.\xBB"
+  - "Y as\xED, el \xFAltimo guardi\xE1n cae, no en derrota, sino en gratitud, liberado
+    de la oscuridad que lo consumi\xF3 por tanto tiempo."
 --- !u!4 &169255119
 Transform:
   m_ObjectHideFlags: 0
@@ -3847,7 +3880,7 @@ GameObject:
   - component: {fileID: 368452946}
   - component: {fileID: 368452945}
   - component: {fileID: 368452944}
-  - component: {fileID: 368452943}
+  - component: {fileID: 368452947}
   m_Layer: 5
   m_Name: Preguntas Slime
   m_TagString: Untagged
@@ -3875,97 +3908,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &368452943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 368452941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e7c85b203332af469cf74ac16f0fe02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  preguntaText: {fileID: 1155001048}
-  opcionesButtons:
-  - {fileID: 1462589442}
-  - {fileID: 31605092}
-  - {fileID: 242353562}
-  - {fileID: 171543855}
-  "imagenesSe\xF1as":
-  - {fileID: 522377733}
-  - {fileID: 1214558624}
-  - {fileID: 1419970020}
-  - {fileID: 62188981}
-  interactionPanel: {fileID: 158004693}
-  skeletonAnimator: {fileID: 94870520}
-  skeletonObject: {fileID: 94870515}
-  player: {fileID: 343328040}
-  skeletonAttackDuration: 1
-  abecedarioSprites:
-  - {fileID: 771400437, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1402766991, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 320863717, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 1932737643, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1463282453, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 1065221094, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 202370464, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1326424057, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1280691261, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1485832691, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -891163013, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1572871224, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 1515948772, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 880568267, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 18916146, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 595344857, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 707074815, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1257786875, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 914629411, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 224629491, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 192344563, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 449354367, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 1607042278, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 1293607314, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1384813296, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -645981381, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -2103462953, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 374476516, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -808401316, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 319419296, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  abecedarioLetras:
-  - A
-  - B
-  - C
-  - CH
-  - D
-  - E
-  - F
-  - G
-  - H
-  - I
-  - J
-  - K
-  - L
-  - LL
-  - M
-  - N
-  - O
-  - P
-  - Q
-  - R
-  - RR
-  - S
-  - T
-  - U
-  - V
-  - W
-  - X
-  - Y
-  - Z
-  - "\xD1"
-  playerHealth: {fileID: 343328042}
 --- !u!114 &368452944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4029,6 +3971,59 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
+--- !u!114 &368452947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368452941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1bacec7b84251d4dad4e733add22e24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  preguntaText: {fileID: 1155001048}
+  opcionesButtons:
+  - {fileID: 1462589442}
+  - {fileID: 31605092}
+  - {fileID: 242353562}
+  - {fileID: 171543855}
+  "imagenesSe\xF1as":
+  - {fileID: 522377733}
+  - {fileID: 1214558624}
+  - {fileID: 1419970020}
+  - {fileID: 62188981}
+  interactionPanel: {fileID: 158004693}
+  skeletonAnimator: {fileID: 94870520}
+  skeletonObject: {fileID: 94870515}
+  player: {fileID: 343328040}
+  skeletonAttackDuration: 1
+  abecedarioSprites:
+  - {fileID: 5088316998373936774, guid: eaec45343c59365459455c53064a9850, type: 3}
+  - {fileID: -855298285791758126, guid: 30f500fe29ed1574a82dd8a3b643a31b, type: 3}
+  - {fileID: 6937817954938267909, guid: 87f4248586ad3734c8936f5160405a7b, type: 3}
+  - {fileID: -6470460504253458178, guid: 47d8a2936d0c43c44aaf1586ffd96d87, type: 3}
+  - {fileID: -4178046375966092550, guid: e7e8bd6477e17414bbe7ef5bbf4d412e, type: 3}
+  - {fileID: 4130640169021434097, guid: 7ebb00c0f0e6492469663a497a8f23d4, type: 3}
+  - {fileID: 3465286685962602723, guid: cb724299d4edc7641a8bcc3ec132d44f, type: 3}
+  - {fileID: 7028616704906629411, guid: b2a987d6706929b49b17dd7bd2a02685, type: 3}
+  - {fileID: 8288426215254106694, guid: f2223db021541e944a04ef872af2f6d0, type: 3}
+  - {fileID: 4113829005332862926, guid: 7a1939a7072d81d4bb6a06d97baee55d, type: 3}
+  - {fileID: -5099292496197868168, guid: 512196dd006d7bc44b1aef36d1d0085d, type: 3}
+  abecedarioLetras:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  playerHealth: {fileID: 343328042}
 --- !u!1 &391007125
 GameObject:
   m_ObjectHideFlags: 0
@@ -4533,7 +4528,7 @@ Transform:
   m_GameObject: {fileID: 561232769}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 185.22, y: -3.47, z: 0}
+  m_LocalPosition: {x: 185.22, y: 13.77, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6647,7 +6642,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &881399092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7234,7 +7229,7 @@ GameObject:
   - component: {fileID: 961087528}
   - component: {fileID: 961087527}
   - component: {fileID: 961087526}
-  - component: {fileID: 961087525}
+  - component: {fileID: 961087530}
   m_Layer: 5
   m_Name: Preguntas Caballero Caido
   m_TagString: Untagged
@@ -7242,97 +7237,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &961087525
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 961087524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e7c85b203332af469cf74ac16f0fe02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  preguntaText: {fileID: 686245413}
-  opcionesButtons:
-  - {fileID: 1431947077}
-  - {fileID: 1736661012}
-  - {fileID: 1362949787}
-  - {fileID: 1114219730}
-  "imagenesSe\xF1as":
-  - {fileID: 1362985532}
-  - {fileID: 1593604013}
-  - {fileID: 1778007735}
-  - {fileID: 79941027}
-  interactionPanel: {fileID: 1303171725}
-  skeletonAnimator: {fileID: 631018707}
-  skeletonObject: {fileID: 631018706}
-  player: {fileID: 343328040}
-  skeletonAttackDuration: 1
-  abecedarioSprites:
-  - {fileID: 771400437, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1402766991, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 320863717, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 1932737643, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1463282453, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 1065221094, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 202370464, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1326424057, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1280691261, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1485832691, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -891163013, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1572871224, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 1515948772, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 880568267, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 18916146, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 595344857, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 707074815, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1257786875, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 914629411, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 224629491, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 192344563, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 449354367, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 1607042278, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 1293607314, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1384813296, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -645981381, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -2103462953, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 374476516, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -808401316, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 319419296, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  abecedarioLetras:
-  - A
-  - B
-  - C
-  - CH
-  - D
-  - E
-  - F
-  - G
-  - H
-  - I
-  - J
-  - K
-  - L
-  - LL
-  - M
-  - N
-  - O
-  - P
-  - Q
-  - R
-  - RR
-  - S
-  - T
-  - U
-  - V
-  - W
-  - X
-  - Y
-  - Z
-  - "\xD1"
-  playerHealth: {fileID: 343328042}
 --- !u!114 &961087526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7416,6 +7320,59 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &961087530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961087524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1bacec7b84251d4dad4e733add22e24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  preguntaText: {fileID: 686245413}
+  opcionesButtons:
+  - {fileID: 1431947077}
+  - {fileID: 1736661012}
+  - {fileID: 1362949787}
+  - {fileID: 1114219730}
+  "imagenesSe\xF1as":
+  - {fileID: 1362985532}
+  - {fileID: 1593604013}
+  - {fileID: 1778007735}
+  - {fileID: 79941027}
+  interactionPanel: {fileID: 1303171725}
+  skeletonAnimator: {fileID: 631018707}
+  skeletonObject: {fileID: 631018706}
+  player: {fileID: 343328040}
+  skeletonAttackDuration: 1
+  abecedarioSprites:
+  - {fileID: 5088316998373936774, guid: eaec45343c59365459455c53064a9850, type: 3}
+  - {fileID: -855298285791758126, guid: 30f500fe29ed1574a82dd8a3b643a31b, type: 3}
+  - {fileID: 6937817954938267909, guid: 87f4248586ad3734c8936f5160405a7b, type: 3}
+  - {fileID: -6470460504253458178, guid: 47d8a2936d0c43c44aaf1586ffd96d87, type: 3}
+  - {fileID: -4178046375966092550, guid: e7e8bd6477e17414bbe7ef5bbf4d412e, type: 3}
+  - {fileID: 4130640169021434097, guid: 7ebb00c0f0e6492469663a497a8f23d4, type: 3}
+  - {fileID: 3465286685962602723, guid: cb724299d4edc7641a8bcc3ec132d44f, type: 3}
+  - {fileID: 7028616704906629411, guid: b2a987d6706929b49b17dd7bd2a02685, type: 3}
+  - {fileID: 8288426215254106694, guid: f2223db021541e944a04ef872af2f6d0, type: 3}
+  - {fileID: 4113829005332862926, guid: 7a1939a7072d81d4bb6a06d97baee55d, type: 3}
+  - {fileID: -5099292496197868168, guid: 512196dd006d7bc44b1aef36d1d0085d, type: 3}
+  abecedarioLetras:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  playerHealth: {fileID: 343328042}
 --- !u!1 &977841245
 GameObject:
   m_ObjectHideFlags: 0
@@ -7699,7 +7656,7 @@ Transform:
   m_GameObject: {fileID: 1055937983}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 113.55, y: 7.27, z: 0}
+  m_LocalPosition: {x: 91.03, y: -3.26, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10128,7 +10085,7 @@ GameObject:
   - component: {fileID: 1394514416}
   - component: {fileID: 1394514415}
   - component: {fileID: 1394514414}
-  - component: {fileID: 1394514413}
+  - component: {fileID: 1394514418}
   m_Layer: 5
   m_Name: Preguntas Sheets
   m_TagString: Untagged
@@ -10136,97 +10093,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1394514413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1394514412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e7c85b203332af469cf74ac16f0fe02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  preguntaText: {fileID: 2063768878}
-  opcionesButtons:
-  - {fileID: 921927216}
-  - {fileID: 1811208452}
-  - {fileID: 37667789}
-  - {fileID: 1643302691}
-  "imagenesSe\xF1as":
-  - {fileID: 530612031}
-  - {fileID: 1967353513}
-  - {fileID: 359175886}
-  - {fileID: 1305963934}
-  interactionPanel: {fileID: 1433678673}
-  skeletonAnimator: {fileID: 2063631172}
-  skeletonObject: {fileID: 2063631171}
-  player: {fileID: 343328040}
-  skeletonAttackDuration: 1
-  abecedarioSprites:
-  - {fileID: 771400437, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1402766991, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 320863717, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 1932737643, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1463282453, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 1065221094, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 202370464, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1326424057, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1280691261, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1485832691, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -891163013, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1572871224, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 1515948772, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 880568267, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 18916146, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 595344857, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 707074815, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1257786875, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 914629411, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 224629491, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 192344563, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 449354367, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 1607042278, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 1293607314, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -1384813296, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -645981381, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -2103462953, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 374476516, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: -808401316, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  - {fileID: 319419296, guid: fd894186a4098eb46a5fe026b3ef0c55, type: 3}
-  abecedarioLetras:
-  - A
-  - B
-  - C
-  - CH
-  - D
-  - E
-  - F
-  - G
-  - H
-  - I
-  - J
-  - K
-  - L
-  - LL
-  - M
-  - N
-  - O
-  - P
-  - Q
-  - R
-  - RR
-  - S
-  - T
-  - U
-  - V
-  - W
-  - X
-  - Y
-  - Z
-  - "\xD1"
-  playerHealth: {fileID: 343328042}
 --- !u!114 &1394514414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10310,6 +10176,59 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1394514418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394514412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1bacec7b84251d4dad4e733add22e24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  preguntaText: {fileID: 2063768878}
+  opcionesButtons:
+  - {fileID: 921927216}
+  - {fileID: 1811208452}
+  - {fileID: 37667789}
+  - {fileID: 1643302691}
+  "imagenesSe\xF1as":
+  - {fileID: 530612031}
+  - {fileID: 1967353513}
+  - {fileID: 359175886}
+  - {fileID: 1305963934}
+  interactionPanel: {fileID: 1433678673}
+  skeletonAnimator: {fileID: 2063631172}
+  skeletonObject: {fileID: 2063631171}
+  player: {fileID: 343328040}
+  skeletonAttackDuration: 1
+  abecedarioSprites:
+  - {fileID: 5088316998373936774, guid: eaec45343c59365459455c53064a9850, type: 3}
+  - {fileID: -855298285791758126, guid: 30f500fe29ed1574a82dd8a3b643a31b, type: 3}
+  - {fileID: 6937817954938267909, guid: 87f4248586ad3734c8936f5160405a7b, type: 3}
+  - {fileID: -6470460504253458178, guid: 47d8a2936d0c43c44aaf1586ffd96d87, type: 3}
+  - {fileID: -4178046375966092550, guid: e7e8bd6477e17414bbe7ef5bbf4d412e, type: 3}
+  - {fileID: 4130640169021434097, guid: 7ebb00c0f0e6492469663a497a8f23d4, type: 3}
+  - {fileID: 3465286685962602723, guid: cb724299d4edc7641a8bcc3ec132d44f, type: 3}
+  - {fileID: 7028616704906629411, guid: b2a987d6706929b49b17dd7bd2a02685, type: 3}
+  - {fileID: 8288426215254106694, guid: f2223db021541e944a04ef872af2f6d0, type: 3}
+  - {fileID: 4113829005332862926, guid: 7a1939a7072d81d4bb6a06d97baee55d, type: 3}
+  - {fileID: -5099292496197868168, guid: 512196dd006d7bc44b1aef36d1d0085d, type: 3}
+  abecedarioLetras:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  playerHealth: {fileID: 343328042}
 --- !u!1 &1419970018
 GameObject:
   m_ObjectHideFlags: 0
@@ -10887,7 +10806,7 @@ Transform:
   m_GameObject: {fileID: 1478901725}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 118.87, y: 7.26, z: 0}
+  m_LocalPosition: {x: 101.78, y: -3.34, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -64082,7 +64001,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2091614950
 RectTransform:
   m_ObjectHideFlags: 0

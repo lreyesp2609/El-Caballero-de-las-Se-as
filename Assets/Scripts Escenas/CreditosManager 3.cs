@@ -1,10 +1,10 @@
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class CreditosManager : MonoBehaviour
+
+public class CreditosManager3 : MonoBehaviour
 {
     [Header("Text Configuration")]
     public TextMeshProUGUI creditText;
@@ -13,13 +13,10 @@ public class CreditosManager : MonoBehaviour
     public GameObject continuePrompt;
 
     private string[] creditLines = {
-        "CRÉDITOS",
-        "Equipo de Desarrollo:\n",
-        "Cando Moreno Robinson Rodrigo\nGamboa Macias Kevin Rolando\n",
-        "Asignatura: Interacción Hombre Máquina\n",
-        "Docente: Dr. Erazo Moreta Orlando Ramiro\n",
-        "Período Académico: 2024-2025",
-        "",
+    "¡GRACIAS POR JUGAR!",
+    "Recuerda: la inclusión es la clave para un mundo mejor.",
+    "Este juego es un homenaje a la diversidad y a la importancia de comunicarnos más allá de las palabras.",
+    "¡Sigue explorando, aprendiendo y compartiendo!"
     };
 
     private bool isTyping = false;
